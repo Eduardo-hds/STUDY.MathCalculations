@@ -13,6 +13,8 @@ namespace CalculosMatematicos
             string continueLoop = "n";
             do
             {
+                //Possibilits
+
                 Console.Clear();
 
                 Console.WriteLine("Sistema matemático");
@@ -27,10 +29,12 @@ namespace CalculosMatematicos
                 Console.WriteLine("Digite o número do sistema desejado:");
                 selection = Convert.ToInt32(Console.ReadLine());
 
+                Console.Clear();
+                //Program
+
                 if (selection == 1)
                 {
                     Factorial();
-
 
                 }
                 else if (selection == 2)
@@ -148,15 +152,15 @@ namespace CalculosMatematicos
 
         static void Percentage()
         {
-            int intNumber;
-            int percentage;
-            int result;
+            double intNumber;
+            double percentage;
+            double result;
 
             Console.WriteLine("Digete o número inteiro:");
-            intNumber = Convert.ToInt32(Console.ReadLine());
+            intNumber = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Digete a porcentagem a ser acahada:");
-            percentage = Convert.ToInt32(Console.ReadLine());
+            percentage = Convert.ToDouble(Console.ReadLine());
 
             result = (intNumber * percentage) / 100;
 
